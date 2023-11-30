@@ -1,0 +1,61 @@
+.jogo {
+    display: none;
+    flex-direction: column;
+    max-width: 90%;
+    padding: .5em;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+}
+
+.jogo h2 {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.jogo h3 {
+    margin-top: .5em;
+    font-size: 1.1em;
+}
+
+.jogo p {
+    font: 1.1em;
+    margin-top: 1em;
+}
+
+.valor-falado {
+    border: solid 2px white;
+    text-align: center;
+    align-self: center;
+    padding: .5em 1em;
+    font-size: 3em;
+    margin-top: .3em;
+}
+
+.confetes {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.acertou{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogar-novamente{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.acertou .confetes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.confetes canvas{
+    height: 100%;
+}

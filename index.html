@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="jogo.css">
+    <title>Mistério Numérico</title>
+</head>
+
+<body>
+    <div class="menu" id="menu">
+        <h1>Adivinhe o número secreto</h1>
+        <h3>Dificuldade:</h3>
+        <div class="lista-de-dificuldade" id="lista-de-dificuldade">
+            <input type="radio" name="dificuldade" id="facil" checked>
+            <input type="radio" name="dificuldade" id="medio">
+            <input type="radio" name="dificuldade" id="dificil">
+
+            <label for="facil" class="btn-dificuldade active" data-dificuldade="facil">Fácil</label>
+            <label for="medio" class="btn-dificuldade" data-dificuldade="medio">Médio</label>
+            <label for="dificil" class="btn-dificuldade" data-dificuldade="dificil">Difícil</label>
+        </div>
+        <button type="button" class="btn-start" id="start">Start</button>
+    </div>
+
+    <div class="jogo" id="jogo">
+        <h2>Acerte o número secreto</h2>
+        <h3>O número secreto está entre <span id="menorNumero">0</span> e <span id="maiorNumero">100</span></h3>
+        <div class="box" id="chute"></div>
+    </div>
+
+
+    <div class="acertou" id="acertou">
+        <div class="jogar-novamente">
+            <h2>Voce Acertou!!!!</h2>
+            <h3>O número secreto era <span id="numeroSecreto"></span></h3>
+            <button id="jogarNovamente" class="btn-jogar">Jogar Novamente</button>
+        </div>
+        <div class="confetes" id="confetes">
+            <canvas id="my-canvas"></canvas>
+            <canvas id="my-canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="./script/definirDificuldade.js"></script>
+    <script src="./script/jogo.js"></script>
+    <script src="./script/sortearNumero.js"></script>
+    <script src="./script/reconhecimentoDeVoz.js"></script>
+    <script src="./script/validacao.js"></script>
+    <script src="./script/index.min.js"></script>
+    <script src="./script/confete.js"></script>
+
+</body>
+
+</html>
