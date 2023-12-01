@@ -26,7 +26,7 @@ body{
     background-color: #FF8400;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    max-width: 320px;
     padding: 1em;
     background-color: var(--bg-menu);
     color: white;
@@ -77,4 +77,12 @@ body{
     padding: .3em .8em;
     align-self: center;
     margin-top: .8em;
+    background-color: red;
+    color: white;
+}
+
+@media screen and (min-width: 510px) {
+    .menu{
+        max-width: 400px;
+    }
 }
