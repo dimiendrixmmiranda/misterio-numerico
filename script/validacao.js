@@ -32,7 +32,7 @@ function vereficaSeOChuteEValido(chute) {
         divAcertou.style.display = 'flex'
         divJogo.style.display = 'none'
         elementoNumeroSecreto.innerHTML = `${numeroSecreto}`
-        const musicaGanhador = new Audio('./musicaGanhador.m4a')
+        const musicaGanhador = new Audio('assets/audios/musicaGanhador.m4a')
         musicaGanhador.play()
 
     } else if (numero > numeroSecreto) {
@@ -66,7 +66,7 @@ function vereficaSeOChuteEValido(chute) {
         }
     }
     if (tentativas > 10) {
-        const musicaPerdedor = new Audio('./musicaPerdedor.m4a')
+        const musicaPerdedor = new Audio('assets/audios/musicaPerdedor.m4a')
         musicaPerdedor.play()
         document.body.innerHTML = `
         <div class="container-perdedor">

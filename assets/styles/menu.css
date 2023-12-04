@@ -2,7 +2,8 @@
 
 :root{
     --bg-fundo: #0079FF;
-    --bg-menu: #060047;
+    --bg-menu: #f8473a;
+    --bg-btn: #0F233B;
     --fonte-principal: 'Montserrat', sans-serif
 }
 
@@ -23,15 +24,16 @@ body{
 }
 
 .menu{
-    background-color: #FF8400;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 320px;
     padding: 1em;
     background-color: var(--bg-menu);
     color: white;
-    border-radius: 5px;
     z-index: 2;
+    box-shadow: 5px 5px 10px 5px black;
 }
 
 .menu h1{
@@ -40,45 +42,52 @@ body{
     font-weight: 800;
 }
 
+.menu img{
+    padding: 1em;
+    width: 60%;
+    text-align: center;
+}
+
 .menu h3{
-    margin-top: .8em;
     font-size: 1.4em;
     font-weight: 400;
+    align-self: flex-start;
 }
 
 .lista-de-dificuldade input{
     display: none;
 }
 
-.menu .lista-de-dificuldade{
+.lista-de-dificuldade{
     display: flex;
-    justify-content: space-around;
+    width: 100%;
 }
 
 .btn-dificuldade{
     margin-top: .5em;
-    background-color: red;
+    background-color: var(--bg-btn);
     font-size: 1em;
     padding: .5em 1em;
     font-weight: 600;
     cursor: pointer;
     transition: .6s;
+    width: 100%;
+    text-align: center;
 }
 
 .active{
     color: red;
     background-color: white;
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 
 .btn-start{
     font-size: 1.7em;
-    padding: .3em .8em;
-    align-self: center;
-    margin-top: .8em;
-    background-color: red;
+    background-color: var(--bg-btn);
     color: white;
+    padding: .3em 4em;
+    margin-top: .8em;
 }
 
 @media screen and (min-width: 510px) {

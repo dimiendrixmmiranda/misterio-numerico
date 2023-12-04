@@ -68,6 +68,8 @@
     font-size: 1.2em;
     padding: .5em 1em;
     margin-top: .3em;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .acertou .confetes{
